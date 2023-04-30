@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+<div class="h-[100vh] flex justify-center items-center text-center">
+    <div class="bg-gray-100 rounded-lg w-[60%]">
+        <h1 class="text-xl font-bold my-4">
+            Weather App
+        </h1>
+        <div id="input-form" class="my-6 w-[92%] flex items-center justify-between mx-4">
+            <input type="text" placeholder="Enter City Name" class="text-lg p-1 bg-transparent outline-none " id="city-input">
+            <input type="submit" value="Get Weather" class="bg-blue-600 rounded-lg p-1 cursor-pointer">
+        </div>
+
+        <div id="weather-data" class=" w-[100%] my-4 ">
+            <div class="icon flex justify-center ">
+                <img class=" my-2 w-[100px] h-[100px] object-cover bg-center" src="http://openweathermap.org/img/wn/01d.png" alt="Weather icon">
+            </div>
+            <div class="temperature text-4xl font-bold my-4">22°C</div>
+            <div class="description text-lg my-2">Sunny</div>
+            <div class="details flex justify-center items-center my-4 text-center">
+                <div class="bg-gray-200 mx-4  p-2 text-lg rounded-lg">Feels like : 22°C</div>
+                <div class="bg-gray-200 mx-4  p-2 text-lg rounded-lg">Humidity : 40%</div>
+                <div class="bg-gray-200 mx-4  p-2 text-lg rounded-lg">Wind speed : 5 m/s</div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
